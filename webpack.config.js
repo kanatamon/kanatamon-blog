@@ -2,7 +2,6 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: [
-    'webpack-dev-server/client?http://localhost:8080',
     'react-hot-loader/patch',
     './src/index.js',
   ],
@@ -27,6 +26,7 @@ module.exports = {
   devServer: {
     contentBase: './public',
     hot: true,
+    port: 5000,
   },
   plugins: [
     new webpack.NamedModulesPlugin(),
