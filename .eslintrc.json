@@ -2,5 +2,8 @@
 	"extends": "airbnb",
 	"env": {
 		"browser": true
+	},
+	"rules": {
+		"no-unused-expressions": ["error", { "allowTemplateTags": true }]
 	}
 }

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
+import { injectGlobal } from 'styled-components';
 import App from './App';
 
 function render(Component) {
@@ -11,6 +12,12 @@ function render(Component) {
     document.getElementById('app'),
   );
 }
+
+injectGlobal`
+  body {
+    margin: 0;
+  }
+`;
 
 render(App);
 

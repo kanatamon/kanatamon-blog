@@ -1,7 +1,12 @@
 import * as React from 'react';
+import Navigator from './components/Navigator';
 
 function App() {
-  return <div>Hello World</div>;
+  return (
+    <div>
+      <Navigator />
+    </div>
+  );
 }
 
 export default App;
