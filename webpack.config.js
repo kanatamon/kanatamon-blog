@@ -5,7 +5,7 @@ module.exports = {
     'react-hot-loader/patch',
     './src/index.js',
   ],
-  devtool: 'eval',
+  devtool: 'source-map',
   output: {
     path: __dirname + '/public',
     publicPath: '/',
